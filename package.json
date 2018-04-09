@@ -1,0 +1,48 @@
+{
+    "name": "chil.exp.feature-growth",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "node tools/devServer.js",
+        "build": "rimraf dist && cross-env NODE_ENV=production BUILD_DEV=false webpack -p"
+    },
+    "dependencies": {
+        "@types/es6-promise": "0.0.32",
+        "@types/react": "^16.0.10",
+        "@types/react-copy-to-clipboard": "^4.2.3",
+        "@types/react-dom": "^16.0.1",
+        "@types/react-icons": "^2.2.4",
+        "axios": "0.17.1",
+        "mobx": "^3.3.1",
+        "mobx-react": "^4.3.3",
+        "mobx-react-devtools": "4.2.15",
+        "react": "15.4.2",
+        "react-dom": "15.4.2",
+        "styled-components": "^3.2.5",
+        "tslib": "^1.6.0"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^3.0.4",
+        "body-parser": "^1.18.2",
+        "cors-anywhere": "^0.4.0",
+        "cross-env": "^3.1.3",
+        "css-loader": "^0.26.1",
+        "express": "^4.14.0",
+        "extract-text-webpack-plugin": "^2.0.0",
+        "html-webpack-plugin": "^2.24.0",
+        "less": "^2.7.1",
+        "less-loader": "^2.2.3",
+        "mongoose": "^5.0.13",
+        "rimraf": "^2.6.0",
+        "source-map-loader": "^0.1.5",
+        "style-loader": "^0.13.1",
+        "tslint": "^5.7.0",
+        "tslint-loader": "^3.5.3",
+        "tslint-microsoft-contrib": "^5.0.1",
+        "typescript": "^2.5.3",
+        "webpack": "^2.4.1",
+        "webpack-dev-middleware": "^1.9.0",
+        "webpack-hot-middleware": "^2.14.0",
+        "webpack-notifier": "^1.5.0"
+    }
+}

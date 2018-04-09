@@ -1,0 +1,72 @@
+{
+    "extends": ["./node_modules/tslint-microsoft-contrib/tslint.json"],
+    "rules": {
+        "newline-before-return": false,
+        "prefer-method-signature": false,
+        "member-ordering": false,
+        "typedef": false,
+        "max-classes-per-file": false,
+        "insecure-random": true,
+        "no-banned-terms": true,
+        "no-cookies": true,
+        "no-delete-expression": true,
+        "no-disable-auto-sanitization": true,
+        "no-document-domain": true,
+        "no-document-write": true,
+        "no-eval": true,
+        "no-exec-script": true,
+        "no-function-constructor-with-string-args": true,
+        "no-http-string": [true, "http://www.example.com/?.*", "http://www.examples.com/?.*"],
+        "no-inner-html": true,
+        "no-implicit-dependencies": false,
+        "no-submodule-imports": false,
+        "no-octal-literal": true,
+        "no-reserved-keywords": true,
+        "no-string-based-set-immediate": true,
+        "no-string-based-set-interval": true,
+        "no-string-based-set-timeout": true,
+        "non-literal-require": true,
+        "possible-timing-attack": true,
+        "react-anchor-blank-noopener": true,
+        "react-iframe-missing-sandbox": true,
+        "react-no-dangerous-html": true,
+
+        "function-name": [
+            true,
+            {
+                "private-method-regex": "^_[a-z][\\w\\d]+$",
+                "protected-method-regex": "^_[a-z][\\w\\d]+$",
+                "static-method-regex": "^[a-z][\\w\\d]+$"
+            }
+        ],
+        "linebreak-style": [false],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
+        "no-increment-decrement": false,
+        "object-literal-key-quotes": [false],
+        "react-this-binding-issue": [false],
+        "react-tsx-curly-spacing": [
+            true,
+            "never",
+            {
+                "allowMultiline": true
+            }
+        ],
+        "max-line-length": [true, 120],
+        "export-name": false,
+        "no-backbone-get-set-outside-model": false,
+        "no-unused-variable": [true, "react"],
+        "quotemark": [true, "single", "jsx-double"],
+        "semicolon": [true, "always", "ignore-bound-class-methods"],
+        "align": [true, "parameters", "statements"],
+        "max-func-body-length": false,
+        "no-multiline-string": false,
+        "react-a11y-event-has-role": false,
+        "react-a11y-role-has-required-aria-props": false,
+        "react-a11y-role-supports-aria-props": false,
+        "react-a11y-image-button-has-alt": false,
+        "react-a11y-aria-unsupported-elements": false,
+        "no-for-in-array": false,
+        "restrict-plus-operands": false,
+        "ordered-imports": false
+    }
+}
