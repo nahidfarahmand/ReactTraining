@@ -8,3 +8,8 @@ export type Employee = {
     lastName: string;
     phone: string;
 };
+
+export type Tab = {
+    title: string;
+    content: JSX.Element;
+};

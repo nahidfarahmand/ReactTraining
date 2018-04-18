@@ -37,8 +37,7 @@ ReactDOM.render(createUi(App), rootElement);
 // Hot Module Replacement APIs
 if (module.hot) {
     module.hot.accept('./components/App', () => {
-        const NextApp = require<{ App: typeof App }>('./components/App')
-            .App;
+        const NextApp = require<{ App: typeof App }>('./components/App').App;
         ReactDOM.render(createUi(NextApp), rootElement);
     });
 }

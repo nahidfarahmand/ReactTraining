@@ -1,5 +1,5 @@
 {
-    "name": "chil.exp.feature-growth",
+    "name": "react-training",
     "version": "1.0.0",
     "description": "",
     "scripts": {
@@ -11,6 +11,7 @@
         "@types/react": "^16.0.10",
         "@types/react-copy-to-clipboard": "^4.2.3",
         "@types/react-dom": "^16.0.1",
+        "@types/react-fontawesome": "^1.6.2",
         "@types/react-icons": "^2.2.4",
         "axios": "0.17.1",
         "mobx": "^3.3.1",
@@ -18,6 +19,7 @@
         "mobx-react-devtools": "4.2.15",
         "react": "15.4.2",
         "react-dom": "15.4.2",
+        "react-fontawesome": "^1.6.1",
         "styled-components": "^3.2.5",
         "tslib": "^1.6.0"
     },
@@ -29,6 +31,7 @@
         "css-loader": "^0.26.1",
         "express": "^4.14.0",
         "extract-text-webpack-plugin": "^2.0.0",
+        "file-loader": "^1.1.11",
         "html-webpack-plugin": "^2.24.0",
         "less": "^2.7.1",
         "less-loader": "^2.2.3",

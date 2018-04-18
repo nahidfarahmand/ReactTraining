@@ -13,5 +13,6 @@ type QueryParams = {
 };
 
 declare var module: NodeModule;
+declare module '*.png';
 declare var require: NodeRequire;
 declare var __DEV__: boolean;

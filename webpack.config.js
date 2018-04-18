@@ -81,6 +81,23 @@ module.exports = {
                 loader: 'awesome-typescript-loader',
                 exclude: path.resolve(__dirname, 'node_modules')
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                use: [{ loader: 'file-loader', options: {} }]
+            },
+            {
+                test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/', // where the fonts will go
+                            publicPath: '../' // override the default path
+                        }
+                    }
+                ]
+            },
             cssLoader
         ]
     },
